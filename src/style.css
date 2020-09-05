@@ -1,0 +1,64 @@
+/* reset styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html {
+    height: 100vh;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* styles for html page */
+
+body {
+    position: relative;
+    font-size: 14px;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 1rem;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+.mt-3{
+    margin-top: 1rem;
+}
+.timer-container {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 130px;
+}
+
+/* styles for countdown timer */
+/* todo: move them inside script */
+
+.countdowntimer {
+    width: 100%;
+}
+.countdowntimer button[type=submit]{
+    width: 100%;
+    border: none;
+    background-color: #53b534;
+    color: white;
+    padding: 1rem 1rem;
+    font-family: inherit;
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 400;
+    transition: 0.3s all ease;
+}
+.countdowntimer button[type=submit]:hover {
+    background-color: #398222;
+    cursor: pointer;
+}
+.countdowntimer button[type=submit]:hover, .countdowntimer button[type=submit]:focus{
+    outline: none;
+}
