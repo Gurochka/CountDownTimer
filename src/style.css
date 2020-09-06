@@ -53,7 +53,7 @@ h1 {
     border-radius: 3px;
     font-size: 1em;
     font-weight: 400;
-    transition: 0.3s all ease;
+    transition: 0.3s background-color ease;
 }
 .countdowntimer button[type=submit]:hover {
     background-color: #398222;
