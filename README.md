@@ -18,35 +18,35 @@ The source file is located at `src/countdowntimer.js`. You can use the next gulp
 **submit_verify_message: string** - text of submit verify message  
 
 #### POST Submit options:
-**post_url: string**
-**cat: string**
-**uuid: string**
-**onSubmitSuccess: function** - launches if submit action is successful
-**onSubmitError: function** - launches if submit action fired an error. By default error message would be shown in console.
+**post_url: string**  
+**cat: string**  
+**uuid: string**  
+**onSubmitSuccess: function** - launches if submit action is successful  
+**onSubmitError: function** - launches if submit action fired an error. By default error message would be shown in console.  
 #### GET Timer options:
-**timer_url: string**
-**onGetTimerError: function** - launches if getting timer info fired an error. By default error message would be shown in console.
+**timer_url: string**  
+**onGetTimerError: function** - launches if getting timer info fired an error. By default error message would be shown in console.  
 #### Timer options:
-**warning_threshold: number**
-**warning_message: string**
-**onShowWarning: function** - redefine this function to use your own warning message. A standart `alert` is used by default.
-**alert_threshold: number**
-**alert_message: string**
-**onShowAlert: function** - redefine this function to use your own alert message. A standart `alert` is used by default.
-**onStopTimer: function** - calls when timer has stopped because time's up. 
+**warning_threshold: number**  
+**warning_message: string**  
+**onShowWarning: function** - redefine this function to use your own warning message. A standart `alert` is used by default.  
+**alert_threshold: number**  
+**alert_message: string**  
+**onShowAlert: function** - redefine this function to use your own alert message. A standart `alert` is used by default.  
+**onStopTimer: function** - calls when timer has stopped because time's up.   
 
 #### Methods (experimental part which needs to be redesigned a little bit):
-**show** - shows timer component by setting `visibility: visible`
-**hide** - hides timer component by setting `visibility: hidden`
-Right now you can redefine both methods like that:
+**show** - shows timer component by setting `visibility: visible`  
+**hide** - hides timer component by setting `visibility: hidden`  
+Right now you can redefine both methods like that:  
 ```
 const timer = new CountdownTimer();
 timer.show = yourOwnShowFunction;
 timer.hide = yourOwnHideFunction;
 ```
-**startTimer** - *experimental. Just recreates setInterval. To restart whole timer run stopTimer first.
-**pauseTimer** - *experimental. Pauses timer, to start it back call startTimer function
-**stopTimer** - *experimental. Clear all intervals and reset timer values.
+**startTimer** - *experimental. Just recreates setInterval. To restart whole timer run stopTimer first.  
+**pauseTimer** - *experimental. Pauses timer, to start it back call startTimer function  
+**stopTimer** - *experimental. Clear all intervals and reset timer values.  
 
 #### todo Part:
 
