@@ -10,12 +10,12 @@ The source file is located at `src/countdowntimer.js`. You can use the next gulp
 - `gulp compress` (or `npm run compress`) - creates a minified version of `/dist/countdowntimer.js`. The destination file is located at `/dist/countdowntimer-min.js`
 
 ### Available Widget options:
-**customElement: DOMNode** - define your own submit button element instead of .countdowntimer. The element has to contain at least one button with type 'submit'
-**container: string** - define container selector to draw button inside it.
-**button_text: string** - submit button text, by default is "Submit"
-**hide_on_start: boolean** - set to true to hide submit button when component has been just created. By default is true
-**beforeSubmit: function = (this) => boolean;** - Asks if user wants to submit. Return true to continue submit, and false to reject it. Define empty funtion, like: `beforeSubmit: () => true` to disable verification
-**submit_verify_message: string** - text of submit verify message
+**customElement: DOMNode** - define your own submit button element instead of .countdowntimer. The element has to contain at least one button with type 'submit'  
+**container: string** - define container selector to draw button inside it.  
+**button_text: string** - submit button text, by default is "Submit"  
+**hide_on_start: boolean** - set to true to hide submit button when component has been just created. By default is true  
+**beforeSubmit: function = (this) => boolean;** - Asks if user wants to submit. Return true to continue submit, and false to reject it. Define empty funtion, like: `beforeSubmit: () => true` to disable verification   
+**submit_verify_message: string** - text of submit verify message  
 
 #### POST Submit options:
 **post_url: string**
