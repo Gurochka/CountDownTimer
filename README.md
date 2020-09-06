@@ -1,13 +1,14 @@
 # CountDownTimer
 
 ### Running demo, source files, etc..
-There is a demo version located at the `/src` folder. Just run `index.html` file in your browser. There are two buttons - the first one is custom, and it's hidden at the start. The second one is a default button which is visible at the start (a green one). Both of them shouldn't work right now because of the wrong `post_url` option. Please, change this option, and provide the `timer_url` option as well.
+There is a demo version located at the `/src` folder. Just run `index.html` file in your browser. The example of using CoundDownTimer widget is at `/src/index.js` file.  
+There are two buttons - the first one is custom, and it's hidden at the start. The second one is a default button which is visible at the start (a green one). Both of them shouldn't work right now because of the wrong `post_url` option. Please, change this option, and provide the `timer_url` option as well.
 
 The source file is located at `src/countdowntimer.js`. You can use the next gulp tasks, also:
 
-- `gulp js` (or `npm run js`) - creates a file with help of Babel compiler. Use this file if you don't use Babel for your project. The destination file is `/dist/countdowntimer.js`
+- `gulp js` (or `npm run js`) - creates a file with help of Babel compiler. Use this file if you don't use Babel for your project. The destination file will be `/dist/countdowntimer.js`
 
-- `gulp compress` (or `npm run compress`) - creates a minified version of `/dist/countdowntimer.js`. The destination file is located at `/dist/countdowntimer-min.js`
+- `gulp compress` (or `npm run compress`) - creates a minified version of `/dist/countdowntimer.js`. The destination file will be `/dist/countdowntimer-min.js`
 
 ### Available Widget options:
 **customElement: DOMNode** - define your own submit button element instead of .countdowntimer. The element has to contain at least one button with type 'submit'  
