@@ -219,9 +219,10 @@ class CountdownTimer {
     stopTimer = () => {
         clearInterval(this._interval_id);
         this._interval_id = null;
-        if (this.onStopTimer) this.onStopTimer();
         this._warning_message_is_shown = false;
         this._alert_message_is_shown = false;
+        this._seconds_remaining = this.secondsRemaining;
+        if (this.onStopTimer) this.onStopTimer();
     }
 
     // helper classes
